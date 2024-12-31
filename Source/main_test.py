@@ -8,6 +8,15 @@ This file is the main test for the fits_header_extractor library.
 @ Date: 2024-11-14
 """
 
-import fits_header_extractor as fhe
+from fits_header_extractor import FitsHeaderExtractor
+from astropy.coordinates import SkyCoord
+from astropy import units as u
 
-fhe.ping()
+fhe = FitsHeaderExtractor()
+
+fhe.extract_header_directory(verbatim=True)
+#fhe.print_header()
+fhe.curate(resolve_name = False, verbatim=True)
+fhe.make_moc(verbatim=True)
+coord = SkyCoord(84*u.deg, -69.2*u.deg)
+a = fhe.is_in_wcs(coord)
