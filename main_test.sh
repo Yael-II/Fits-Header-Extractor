@@ -1,2 +1,2 @@
 source activate.sh
-python Source/main_test.py
+venv/bin/python Source/main_test.py
