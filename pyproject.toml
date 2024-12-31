@@ -1,0 +1,24 @@
+[project]
+name = "fits_header_extractor"
+version = "1.0.0"
+authors = [
+  { name="Moussouni, Yaël", email="yael.moussouni@etu.unistra.fr" },
+]
+description = "Fits are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this library is to explore fits header."
+
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+     "Programming Language :: Python :: 3",
+     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+     "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Yael-II/Fits_Header_Extractor/"
+Issues = "https://github.com/Yael-II/Fits_Header_Extractor/issues/"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
