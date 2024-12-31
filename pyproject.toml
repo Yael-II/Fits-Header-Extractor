@@ -1,6 +1,6 @@
 [project]
 name = "fits_header_extractor"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Moussouni, Yaël", email="yael.moussouni@etu.unistra.fr" },
 ]
