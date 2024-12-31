@@ -8,7 +8,7 @@ This file is the main test for the fits_header_extractor library.
 @ Date: 2024-11-14
 """
 
-from fits_header_extractor import FitsHeaderExtractor
+from fits_header_extractor.core import FitsHeaderExtractor
 from astropy.coordinates import SkyCoord
 from astropy import units as u
 
