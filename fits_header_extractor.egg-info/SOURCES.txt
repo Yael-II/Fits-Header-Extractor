@@ -2,7 +2,6 @@ COPYING
 README.md
 pyproject.toml
 fits_header_extractor/__init__.py
-fits_header_extractor/core.py
 fits_header_extractor/example.py
 fits_header_extractor.egg-info/PKG-INFO
 fits_header_extractor.egg-info/SOURCES.txt
