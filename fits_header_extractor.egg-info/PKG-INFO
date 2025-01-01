@@ -69,9 +69,9 @@ Requires-Dist: wcwidth==0.2.13
 Requires-Dist: webencodings==0.5.1
 Requires-Dist: widgetsnbextension==4.0.13
 
-<!--[TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!-->
+<!--[TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!-->
 ```diff
-- [TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!
+- [TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!
 ```
 
 # Fits Header Extractor and Curator With Python
