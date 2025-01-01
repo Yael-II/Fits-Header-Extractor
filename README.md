@@ -21,7 +21,7 @@ The library requires `python` (tested with version 3.13.1), `setuptools`, `git`,
 1. **Create a virtual environment (optional):** Simply run `python3 -m venv venv` in your working directory. Then, activate this environment with `./venv/bin/activate`. You can deactivate the virtual environment with the `deactivate` command.
 2. **Install the package:** The package can be installed from Github with pip and git, run (in your environment):
 ```bash
-pip install git+https://github.com/Yael-II/Fits_Header_Extractor
+pip install git+https://github.com/Yael-II/Fits-Header-Extractor
 ```
 
 ## The `fits_header_extractor` library and `FitsHeaderExtractor` class

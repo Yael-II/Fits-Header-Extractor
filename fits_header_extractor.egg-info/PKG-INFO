@@ -3,8 +3,8 @@ Name: fits_header_extractor
 Version: 1.0.2
 Summary: Fits are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this package is to explore fits header.
 Author-email: "Moussouni, Yaël" <yael.moussouni@etu.unistra.fr>
-Project-URL: Homepage, https://github.com/Yael-II/Fits_Header_Extractor/
-Project-URL: Issues, https://github.com/Yael-II/Fits_Header_Extractor/issues/
+Project-URL: Homepage, https://github.com/Yael-II/Fits-Header-Extractor/
+Project-URL: Issues, https://github.com/Yael-II/Fits-Header-Extractor/issues/
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
 Classifier: Operating System :: OS Independent
@@ -92,7 +92,7 @@ The library requires `python` (tested with version 3.13.1), `setuptools`, `git`,
 1. **Create a virtual environment (optional):** Simply run `python3 -m venv venv` in your working directory. Then, activate this environment with `./venv/bin/activate`. You can deactivate the virtual environment with the `deactivate` command.
 2. **Install the package:** The package can be installed from Github with pip and git, run (in your environment):
 ```bash
-pip install git+https://github.com/Yael-II/Fits_Header_Extractor
+pip install git+https://github.com/Yael-II/Fits-Header-Extractor
 ```
 
 ## The `fits_header_extractor` library and `FitsHeaderExtractor` class

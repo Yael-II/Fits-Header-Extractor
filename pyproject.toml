@@ -44,8 +44,8 @@ classifiers = [
 dynamic = ["dependencies"]
 
 [project.urls]
-Homepage = "https://github.com/Yael-II/Fits_Header_Extractor/"
-Issues = "https://github.com/Yael-II/Fits_Header_Extractor/issues/"
+Homepage = "https://github.com/Yael-II/Fits-Header-Extractor/"
+Issues = "https://github.com/Yael-II/Fits-Header-Extractor/issues/"
 
 [build-system]
 requires = ["setuptools>=61.0"]
