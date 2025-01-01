@@ -1,4 +1,4 @@
-COPYING
+COPYING.txt
 README.md
 pyproject.toml
 requirements.txt

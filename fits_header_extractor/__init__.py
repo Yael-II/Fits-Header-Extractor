@@ -1,5 +1,12 @@
+#!/usr/bin/env python
+# [TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!
 """
 FITS header extractor is a python library to extract the header of FITS.
+
+@ Author: Moussouni, Yaël (MSc student; yael.moussouni@etu.unistra.fr)
+@ Institution:  Université de Strasbourg, CNRS, Observatoire astronomique
+                de Strasbourg, UMR 7550, F-67000 Strasbourg, France
+@ Date: 2025-01-01
 
 Content: 
     - FitsHeaderExtractor class
@@ -25,18 +32,34 @@ Content:
 
 Usage: 
     ### Example of usage ###
-    import fits_geader_extractor as FitsHeaderExtractor # Imports the library
+    from fits_header_extractor import FitsHeaderExtractor # Imports the library
     
     fhe = FitsHeaderExtractor() # Initialize an instance of the library
     fhe.ping() # If the library is correctly imported, "pong" is printed
     # ...
     ### End of the example ###
 
-@ Author: Moussouni, Yaël (MSc student)
-@ Institution:  Université de Strasbourg, CNRS, Observatoire astronomique
-                de Strasbourg, UMR 7550, F-67000 Strasbourg, France
-@ Date: 2024-11-14
+Licence:
+Fits Header Extractor [and Curator With Python]
+Copyright (C) 2025 Yaël Moussouni (yael.moussouni@etu.unistra.fr)
+
+__init.py__
+Copyright (C) 2025 Yaël Moussouni (yael.moussouni@etu.unistra.fr)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see https://www.gnu.org/licenses/.
 """
+
 import warnings
 import os
 from urllib.request import urlopen
@@ -316,7 +339,8 @@ class FitsHeaderExtractor:
                             header_info["EXPTIME"] = exptime
                         elif "OBJECT" in card:
                             if resolve_name:
-                                obj = self.__resolve(line[9:], verbatim=verbatim)
+                                obj = self.__resolve(line[9:], 
+                                                     verbatim=verbatim)
                             else:
                                 obj = line[9:]
                             header_info["OBJECT"] = (line[9:]
@@ -495,7 +519,4 @@ class FitsHeaderExtractor:
                   + msg
                   + COLOUR_DEFAULT)
         return resolved_obj
-
-
-
 
