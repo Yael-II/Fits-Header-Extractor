@@ -1,4 +1,7 @@
-<span style="color:red">[TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!</span>
+<!--[TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!-->
+```diff
+- [TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!
+```
 
 # Fits Header Extractor and Curator With Python
 Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
