@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fits_header_extractor
-Version: 1.0.1
+Version: 1.0.2
 Summary: Fits are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this package is to explore fits header.
 Author-email: "Moussouni, Yaël" <yael.moussouni@etu.unistra.fr>
 Project-URL: Homepage, https://github.com/Yael-II/Fits_Header_Extractor/
@@ -69,7 +69,10 @@ Requires-Dist: wcwidth==0.2.13
 Requires-Dist: webencodings==0.5.1
 Requires-Dist: widgetsnbextension==4.0.13
 
-<span style="color:red">[TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!</span>
+<!--[TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!-->
+```diff
+- [TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!
+```
 
 # Fits Header Extractor and Curator With Python
 Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
