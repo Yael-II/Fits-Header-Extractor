@@ -1,6 +1,6 @@
 <!--[TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!-->
 ```diff
-- [TPL:RED] UNDER EMBARGO UNTIL 2025-01-06!
+- [TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!
 ```
 
 # Fits Header Extractor and Curator With Python
