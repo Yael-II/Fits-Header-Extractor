@@ -478,22 +478,25 @@ class FitsHeaderExtractor:
         for i in index:
             filename = self.file_list[i]
             wcs = self.wcs_list[i]
-            try:
-                fp = wcs.calc_footprint()
-            except Exception as error:
-                msg = str(error).replace("\n", " ")
+            if wcs is not None:
+                try:
+                    fp = wcs.calc_footprint()
+                except Exception as error:
+                    msg = str(error).replace("\n", " ")
+                    fp = None
+                    if msg[-1] != ".":
+                        msg += "."
+                    print(COLOUR_ERROR
+                          + "Error! "
+                          + msg
+                          + " (in get_footprint)"
+                          + COLOUR_DEFAULT)
+                    print(COLOUR_ERROR
+                          + "\"{}\" ".format(filename)
+                          + "footprint will be ignored."
+                          + COLOUR_DEFAULT)
+            else: 
                 fp = None
-                if msg[-1] != ".":
-                    msg += "."
-                print(COLOUR_ERROR
-                      + "Error! "
-                      + msg
-                      + " (in get_footprint)"
-                      + COLOUR_DEFAULT)
-                print(COLOUR_ERROR
-                      + "\"{}\" ".format(filename)
-                      + "footprint will be ignored."
-                      + COLOUR_DEFAULT)
             footprints.append(fp)
         return footprints
 
