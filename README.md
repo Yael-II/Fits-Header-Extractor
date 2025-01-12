@@ -60,40 +60,50 @@ The elements of `self.wcs_list` are dictionaries in the format: `{card: value}`,
     - Parameters
         - `in_dir: str` (optional): input directory path (by default, `./Input/`) 
         - `out_dir: str` (optional): output directory path (by default, `./Output/`) - is not used in the current version
+
 - `ping()`: A quick test, prints `pong`, and returns 0
+
 - `status()`: Prints most the internal variables
+
 - `print_header(index)`: Prints the content of one or multiple headers
     - Parameters
         - `index: int|list` (optional): index or list of indexes of headers to print (by default: None; prints all the header available)
+
 - `get_index(name)`: Gives the index of the header from its name. Returns 
     - Parameters
         - `name: str`: name of the header to retrieve
     - Returns
         - `index` the index of the file `name` in the file list `self.file_list`
+
 - `extract_header(filename, verbatim)`: Extracts the header from a file in the input directory
     - Parameters
         - `filename: str`: name of the FITS file to open. Must contain `.fit` or `.fits` (else, `.fit` is assumed)
         - `verbatim:bool` (optional): define the level of verbosity (see "Verbosity" section)
     - Returns
         - `head`: the header of the file (in the Astropy format); returns `None` if an error occurred.
+
 - `extract_header_directory(verbatim):` Same as `extract_header()`, but for all FITS files in a directory
     - Parameters
         - `verbatim:bool` (optional): Define the level of verbosity (see "Verbosity" section)
     - Returns
         - `head`: the header of the file (in the Astropy format); returns `None` if an error occurred.
+
 - `curate(resolve_name, verbatim)`: Curate the headers in the `self.header_list` into `self.WCS_list` and `self.info_list`
     - Parameters
         - `resolve_name: bool`: select if the object names should be resolved (using [Sesame](https://cds.unistra.fr/cgi-bin/Sesame))
         - `verbatim:bool` (optional): Define the level of verbosity (see "Verbosity" section)
+
 - `make_moc(verbatim)`: Creates a MOC for each files in the file list
     - Parameters
         - `verbatim:bool` (optional): Define the level of verbosity (see "Verbosity" section)
+
 - `is_in_wcs(sky_coord, index)`: Returns a Boolean describing if coordinates are in one of the WCS.
     - Parameters
         - `sky_coord: SkyCoord`: an `astropy.SkyCoord` object with the test coordinates
         - `index: int|list` (optional): an index or list of indexes of FITS files to consider (by default, all the files are tested)
     - Returns
         - `inside_list`: a list of Boolean, the same shape as index, with the values `True` (inside), `False` (outside) or `None` (Error)
+
 - `get_footprint(index)`: Returns the footprint of a MOC from its index 
     - Parameters
         - `index: int|list` (optional): an index or list of indexes of FITS files to consider (by default, all the files are tested)
@@ -103,9 +113,9 @@ The elements of `self.wcs_list` are dictionaries in the format: `{card: value}`,
 ## Verbosity
 
 The `verbatim` arguments can be used to select the level of verbosity:
-- <div color=\"#06518E\">Info</div>: only shown if `verbatim` is `True` (e.g. steps, success)
-- <div color=\"#E8BD0F\">Warning</div>: only shown if `verbatim` is `True` (e.g. non-standard format found, but corrected with no ambiguity)
-- <div color=\"#ED1C24\">Error</div>: always shown. (e.g. non-standard format is not recognized, the file is ignored)
+- 🟦 Info: only shown if `verbatim` is `True` (e.g. steps, success)
+- 🟨 Warning: only shown if `verbatim` is `True` (e.g. non-standard format found, but corrected with no ambiguity)
+- 🟥 Error: always shown. (e.g. non-standard format is not recognized, the file is ignored)
 
 ## Limitation and Corrections
 
