@@ -468,17 +468,7 @@ class FitsHeaderExtractor:
                           order, starting with the bottom left corner.
         """
         if index is None:
-            N_file_list = len(self.file_list)
-            N_header_list = len(self.header_list)
-            N_info_list = len(self.info_list)
-            N_wcs_list = len(self.wcs_list)
-            N_moc_list = len(self.moc_list)
-            N_list = [N_file_list,
-                      N_header_list,
-                      N_info_list,
-                      N_wcs_list,
-                      N_moc_list]
-            N = np.min([N_list])
+            N = len(self.wcs_list)
             index = np.array(range(N))
         elif np.ndim(index) == 0:
             index = np.array([index])
