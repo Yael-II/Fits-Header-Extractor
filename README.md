@@ -103,9 +103,9 @@ The elements of `self.wcs_list` are dictionaries in the format: `{card: value}`,
 ## Verbosity
 
 The `verbatim` arguments can be used to select the level of verbosity:
-- <font color=\"#06518E\">Info</font>: only shown if `verbatim` is `True` (e.g. steps, success)
-- <font color=\"#E8BD0F\">Warning</font>: only shown if `verbatim` is `True` (e.g. non-standard format found, but corrected with no ambiguity)
-- <font color=\"#ED1C24\">Error</font>: always shown. (e.g. non-standard format is not recognized, the file is ignored)
+- <div color=\"#06518E\">Info</div>: only shown if `verbatim` is `True` (e.g. steps, success)
+- <div color=\"#E8BD0F\">Warning</div>: only shown if `verbatim` is `True` (e.g. non-standard format found, but corrected with no ambiguity)
+- <div color=\"#ED1C24\">Error</div>: always shown. (e.g. non-standard format is not recognized, the file is ignored)
 
 ## Limitation and Corrections
 
