@@ -454,6 +454,43 @@ class FitsHeaderExtractor:
             inside_list.append(inside)
         return inside_list
 
+    def get_footprint(self,
+                      index: int|list = None):
+        """
+        Returns the footprint of a MOC from its index (all if None)
+        @params:
+            - index: the index(es) of the MOC
+        @returns:
+            - footprints: a list of footprints, the same shape as index 
+                          (None if no footprint), where each element is a 
+                          (4, 2) array of (x, y) coordinates, in clockwise 
+                          order, starting with the bottom left corner.
+        """
+        if index is None:
+            N_file_list = len(self.file_list)
+            N_header_list = len(self.header_list)
+            N_info_list = len(self.info_list)
+            N_wcs_list = len(self.wcs_list)
+            N_moc_list = len(self.moc_list)
+            N_list = [N_file_list,
+                      N_header_list,
+                      N_info_list,
+                      N_wcs_list,
+                      N_moc_list]
+            N = np.min([N_list])
+            index = np.array(range(N))
+        elif np.ndim(index) == 0:
+            index = np.array([index])
+        else:
+            index = np.array(index).flatten()
+
+        footprints = []
+        for i in index:
+            wcs = self.wcs_list[i]
+            fp = wcs.calc_footprint()
+            footprints.append(fp)
+        return footprints
+
 
 
     def __preformat_time(self, time_str: str):
