@@ -204,7 +204,6 @@ class FitsHeaderExtractor:
 
     def extract_header(self, 
                        filename: str,
-                       directory: str = None,
                        verbatim: bool = False) -> list:
         """
         Get the header of a fit(s) file.
@@ -214,8 +213,7 @@ class FitsHeaderExtractor:
         @returns:
             - head: the header (None if an error occurred)
         """
-        if directory is None:
-            directory = self.in_dir
+        directory = self.in_dir
         # Test and correct for directory name
         if directory[-1] != "/":
             directory[-1] += "/"
@@ -250,7 +248,6 @@ class FitsHeaderExtractor:
         return head
 
     def extract_header_directory(self,
-                                 directory: str = None,
                                  verbatim: bool = False) -> list:
         """
         Get the header of all fit(s) files in a directory.
@@ -259,8 +256,7 @@ class FitsHeaderExtractor:
         @returns:
             - head_list: the header list (empty list if an error occurred)
         """
-        if directory is None:
-            directory = self.in_dir
+        directory = self.in_dir
         filelist = [fname for fname in os.listdir(directory) 
                     if ".fit" in fname] # Works for .fit and .fits
         if verbatim:
@@ -274,17 +270,18 @@ class FitsHeaderExtractor:
                 print(COLOUR_INFO 
                       + "Current file: {} - ".format(filename)
                       + COLOUR_DEFAULT, end="")
-            head = self.extract_header(filename, directory, verbatim)
+            head = self.extract_header(filename, verbatim)
             if head != None:
                 if verbatim:
                     print(COLOUR_INFO + "success." + COLOUR_DEFAULT)
                 header_list.append(head)
         return header_list
 
-    def curate(self, resolve_name: bool = True, verbatim: bool = False):
+    def curate(self, resolve_name: bool = False, verbatim: bool = False):
         """
         Curate the headers into WCS_list and info_list
         @ params:
+            - resolve_name: choose if the object names should be resolved
             - verbatim: display info and warnings
         @ output:
             - 0
