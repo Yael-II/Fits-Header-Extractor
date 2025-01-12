@@ -16,7 +16,6 @@ Requires-Dist: astropy-iers-data==0.2025.1.6.0.33.42
 Requires-Dist: cdshealpix==0.7.1
 Requires-Dist: contourpy==1.3.1
 Requires-Dist: cycler==0.12.1
-Requires-Dist: fits_header_extractor@ git+https://github.com/Yael-II/Fits-Header-Extractor@955f3cfe4f3875a8d1bcbe22bbd492c3374f5125
 Requires-Dist: fonttools==4.55.3
 Requires-Dist: kiwisolver==1.4.8
 Requires-Dist: matplotlib==3.10.0
