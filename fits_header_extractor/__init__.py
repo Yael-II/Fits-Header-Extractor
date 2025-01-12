@@ -23,6 +23,8 @@ Content:
         Methods:
         - ping(): A quick test.
         - status(): Prints all the internal variables.
+        - print_header(): prints the header in the terminal
+        - get_index(): retrieve the index of a header from the name
         - extract_header(): Get the header of a fit(s) file.
         - extract_header_directory(): Get the header of all fit(s) files 
                                       in a directory.
@@ -181,6 +183,23 @@ class FitsHeaderExtractor:
                 print(COLOUR_DEFAULT + line[8:], end="")
                 print(COLOUR_DEFAULT)
         return 0
+
+    def get_index(self,
+                  name: str):
+        """
+        gives the index of the header from its name
+        @params:
+            - name: name of the header
+        @returns:
+            - index: the index of the header (None if not found)
+        """
+        index = 0
+        while index < len(self.filelist):
+            if self.filelist[index] == header:
+                return index
+            else:
+                index += 1
+        return None
 
     def extract_header(self, 
                        filename: str,
