@@ -194,8 +194,8 @@ class FitsHeaderExtractor:
             - index: the index of the header (None if not found)
         """
         index = 0
-        while index < len(self.filelist):
-            if self.filelist[index] == header:
+        while index < len(self.file_list):
+            if self.file_list[index] == header:
                 return index
             else:
                 index += 1
