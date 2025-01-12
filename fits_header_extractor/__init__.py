@@ -31,6 +31,7 @@ Content:
         - curate(): curate data into two lists (WCS and other informations)
         - make_moc(): create MOC for each fits file
         - is_in_wcs(): test if a point is in any fits file coverage
+        - get_footprint(): returns the footprints
 
 Usage: 
     ### Example of usage ###
@@ -483,12 +484,15 @@ class FitsHeaderExtractor:
             index = np.array([index])
         else:
             index = np.array(index).flatten()
-
+        print(index)
         footprints = []
         for i in index:
             wcs = self.wcs_list[i]
+            print(wcs)
             fp = wcs.calc_footprint()
+            print(fp)
             footprints.append(fp)
+        print(footprints)
         return footprints
 
 
