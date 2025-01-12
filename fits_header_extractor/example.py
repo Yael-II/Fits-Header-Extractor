@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# [TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!
+# [TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!
 """
 This file is the main test for the fits_header_extractor library.
 

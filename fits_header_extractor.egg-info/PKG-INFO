@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: fits_header_extractor
 Version: 1.0.2
 Summary: Fits are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this package is to explore fits header.
@@ -69,14 +69,16 @@ Requires-Dist: wcwidth==0.2.13
 Requires-Dist: webencodings==0.5.1
 Requires-Dist: widgetsnbextension==4.0.13
 
-<!--[TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!-->
+<!--[TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!-->
 ```diff
-- [TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!
+- [TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!
 ```
 
 # Fits Header Extractor and Curator With Python
 Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
+
 Institution: Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbourg, France
+
 Date: 2025-01-01
 
 ## Abstract

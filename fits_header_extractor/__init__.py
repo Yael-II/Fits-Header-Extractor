@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# [TLP:RED] UNDER EMBARGO UNTIL 2025-01-06!
+# [TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!
 """
 FITS header extractor is a python library to extract the header of FITS.
 
