@@ -32,7 +32,7 @@ version = "1.0.4"
 authors = [
   { name="Moussouni, Yaël", email="yael.moussouni@etu.unistra.fr" },
 ]
-description = "Fits are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this package is to explore fits header."
+description = "FITS files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this package is to explore FITS header."
 
 readme = "README.md"
 requires-python = ">=3.10"

@@ -6,7 +6,7 @@ FITS header extractor is a python library to extract the header of FITS.
 @ Author: Moussouni, Yaël (MSc student; yael.moussouni@etu.unistra.fr)
 @ Institution:  Université de Strasbourg, CNRS, Observatoire astronomique
                 de Strasbourg, UMR 7550, F-67000 Strasbourg, France
-@ Date: 2025-01-01
+@ Date: 2025-01-12
 
 Content: 
     - FitsHeaderExtractor class

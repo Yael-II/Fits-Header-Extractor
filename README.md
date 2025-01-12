@@ -3,7 +3,7 @@
 - [TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!
 ```
 
-# Fits Header Extractor and Curator With Python
+# FITS Header Extractor and Curator With Python
 Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
 
 Institution: Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbourg, France
@@ -12,7 +12,7 @@ Date: 2025-01-01
 
 ## Abstract
 
-[Fits](https://en.wikipedia.org/wiki/FITS/) are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this Python package is to explore fits header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook.
+[FITS](https://en.wikipedia.org/wiki/FITS/) files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this Python package is to explore FITS header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook (see [this repository](https://github.com/Yael-II/MSc2-Project-FITS)).
 
 ## Requirements
 
@@ -34,7 +34,7 @@ fhe = FitsHeaderExtractor()
 ```
 
 To test the class, simply run:
-```
+```python
 fhe.ping()
 ```
 This should return `0` (and print `pong`).

@@ -1,7 +1,7 @@
 Metadata-Version: 2.2
 Name: fits_header_extractor
 Version: 1.0.4
-Summary: Fits are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this package is to explore fits header.
+Summary: FITS files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this package is to explore FITS header.
 Author-email: "Moussouni, Yaël" <yael.moussouni@etu.unistra.fr>
 Project-URL: Homepage, https://github.com/Yael-II/Fits-Header-Extractor/
 Project-URL: Issues, https://github.com/Yael-II/Fits-Header-Extractor/issues/
@@ -11,70 +11,32 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 License-File: COPYING.txt
-Requires-Dist: anywidget==0.9.13
-Requires-Dist: astropy==6.1.6
-Requires-Dist: astropy-iers-data==0.2024.11.11.0.32.38
-Requires-Dist: astroquery==0.4.7
-Requires-Dist: asttokens==2.4.1
-Requires-Dist: beautifulsoup4==4.12.3
-Requires-Dist: cdshealpix==0.7.0
-Requires-Dist: certifi==2024.8.30
-Requires-Dist: charset-normalizer==3.4.0
-Requires-Dist: comm==0.2.2
+Requires-Dist: astropy==7.0.0
+Requires-Dist: astropy-iers-data==0.2025.1.6.0.33.42
+Requires-Dist: cdshealpix==0.7.1
 Requires-Dist: contourpy==1.3.1
 Requires-Dist: cycler==0.12.1
-Requires-Dist: decorator==5.1.1
-Requires-Dist: executing==2.1.0
-Requires-Dist: fonttools==4.54.1
-Requires-Dist: html5lib==1.1
-Requires-Dist: idna==3.10
-Requires-Dist: ipyaladin==0.5.1
-Requires-Dist: ipython==8.29.0
-Requires-Dist: ipywidgets==8.1.5
-Requires-Dist: jaraco.classes==3.4.0
-Requires-Dist: jaraco.context==6.0.1
-Requires-Dist: jaraco.functools==4.1.0
-Requires-Dist: jedi==0.19.2
-Requires-Dist: jupyterlab_widgets==3.0.13
-Requires-Dist: keyring==25.5.0
-Requires-Dist: kiwisolver==1.4.7
-Requires-Dist: matplotlib==3.9.2
-Requires-Dist: matplotlib-inline==0.1.7
-Requires-Dist: mocpy==0.17.0
-Requires-Dist: more-itertools==10.5.0
+Requires-Dist: fits_header_extractor@ git+https://github.com/Yael-II/Fits-Header-Extractor@955f3cfe4f3875a8d1bcbe22bbd492c3374f5125
+Requires-Dist: fonttools==4.55.3
+Requires-Dist: kiwisolver==1.4.8
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: mocpy==0.17.1
 Requires-Dist: networkx==3.4.2
-Requires-Dist: numpy==2.1.3
+Requires-Dist: numpy==2.2.1
 Requires-Dist: packaging==24.2
-Requires-Dist: parso==0.8.4
-Requires-Dist: pexpect==4.9.0
-Requires-Dist: pillow==11.0.0
-Requires-Dist: prompt_toolkit==3.0.48
-Requires-Dist: psygnal==0.11.1
-Requires-Dist: ptyprocess==0.7.0
-Requires-Dist: pure_eval==0.2.3
+Requires-Dist: pillow==11.1.0
 Requires-Dist: pyerfa==2.0.1.5
-Requires-Dist: Pygments==2.18.0
-Requires-Dist: pyparsing==3.2.0
+Requires-Dist: pyparsing==3.2.1
 Requires-Dist: python-dateutil==2.9.0.post0
-Requires-Dist: pyvo==1.6
 Requires-Dist: PyYAML==6.0.2
-Requires-Dist: requests==2.32.3
-Requires-Dist: six==1.16.0
-Requires-Dist: soupsieve==2.6
-Requires-Dist: stack-data==0.6.3
-Requires-Dist: traitlets==5.14.3
-Requires-Dist: typing_extensions==4.12.2
-Requires-Dist: urllib3==2.2.3
-Requires-Dist: wcwidth==0.2.13
-Requires-Dist: webencodings==0.5.1
-Requires-Dist: widgetsnbextension==4.0.13
+Requires-Dist: six==1.17.0
 
 <!--[TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!-->
 ```diff
 - [TLP:RED] UNDER EMBARGO UNTIL 2025-01-13!
 ```
 
-# Fits Header Extractor and Curator With Python
+# FITS Header Extractor and Curator With Python
 Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
 
 Institution: Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbourg, France
@@ -83,7 +45,7 @@ Date: 2025-01-01
 
 ## Abstract
 
-[Fits](https://en.wikipedia.org/wiki/FITS/) are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this Python package is to explore fits header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook.
+[FITS](https://en.wikipedia.org/wiki/FITS/) files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this Python package is to explore FITS header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook (see [this repository](https://github.com/Yael-II/MSc2-Project-FITS)).
 
 ## Requirements
 
@@ -105,7 +67,7 @@ fhe = FitsHeaderExtractor()
 ```
 
 To test the class, simply run:
-```
+```python
 fhe.ping()
 ```
 This should return `0` (and print `pong`).
