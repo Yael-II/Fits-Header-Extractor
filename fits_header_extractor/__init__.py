@@ -468,21 +468,33 @@ class FitsHeaderExtractor:
                           order, starting with the bottom left corner.
         """
         if index is None:
-            N = len(self.wcs_list)
+            N = np.min(len(self.wcs_list), len(self.file_list))
             index = np.array(range(N))
         elif np.ndim(index) == 0:
             index = np.array([index])
         else:
             index = np.array(index).flatten()
-        print(index)
         footprints = []
         for i in index:
+            filename = self.file_list[i]
             wcs = self.wcs_list[i]
-            print(wcs)
-            fp = wcs.calc_footprint()
-            print(fp)
+            try:
+                fp = wcs.calc_footprint()
+            except Exception as error:
+                msg = str(error).replace("\n", " ")
+                fp = None
+                if msg[-1] != ".":
+                    msg += "."
+                print(COLOUR_ERROR
+                      + "Error! "
+                      + msg
+                      + " (in get_footprint)"
+                      + COLOUR_DEFAULT)
+                print(COLOUR_ERROR
+                      + "\"{}\" ".format(filename)
+                      + "footprint will be ignored."
+                      + COLOUR_DEFAULT)
             footprints.append(fp)
-        print(footprints)
         return footprints
 
 
