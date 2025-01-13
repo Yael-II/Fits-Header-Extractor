@@ -1,3 +1,1 @@
-"""
-init.py
-"""
+from .fits_header_extractor import FitsHeaderExtractor
