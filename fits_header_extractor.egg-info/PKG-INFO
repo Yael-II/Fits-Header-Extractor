@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: fits_header_extractor
-Version: 1.0.5
+Version: 1.1.0
 Summary: FITS files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this package is to explore FITS header.
 Author-email: "Moussouni, Yaël" <yael.moussouni@etu.unistra.fr>
 Project-URL: Homepage, https://github.com/Yael-II/Fits-Header-Extractor/
@@ -33,11 +33,11 @@ Requires-Dist: six==1.17.0
 <!--[TLP:WHITE] FROM 2025-01-13-->
 
 # FITS Header Extractor and Curator With Python
-Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
+Author: Moussouni, Yaël (MSc student; yael.moussouni@etu.unistra.fr)
 
 Institution: Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbourg, France
 
-Date: 2025-01-01
+Date: 2025-01-13
 
 ## Abstract
 
