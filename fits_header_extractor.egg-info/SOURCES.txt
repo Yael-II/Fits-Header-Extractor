@@ -3,7 +3,6 @@ README.md
 pyproject.toml
 requirements.txt
 fits_header_extractor/__init__.py
-fits_header_extractor/example.py
 fits_header_extractor.egg-info/PKG-INFO
 fits_header_extractor.egg-info/SOURCES.txt
 fits_header_extractor.egg-info/dependency_links.txt
