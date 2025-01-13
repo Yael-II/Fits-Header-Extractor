@@ -1,7 +1,7 @@
 <!--[TLP:WHITE] FROM 2025-01-13-->
 
 # FITS Header Extractor and Curator With Python
-Author: Moussouni, Yaël (MSc student; `yael.moussouni@etu.unistra.fr`)
+Author: Moussouni, Yaël (MSc student; yael.moussouni@etu.unistra.fr)
 
 Institution: Université de Strasbourg, CNRS, Observatoire astronomique de Strasbourg, UMR 7550, F-67000 Strasbourg, France
 
