@@ -46,7 +46,7 @@ Licence:
 Fits Header Extractor [and Curator With Python]
 Copyright (C) 2025 Yaël Moussouni (yael.moussouni@etu.unistra.fr)
 
-__fits_header_extractor.py__
+fits_header_extractor.py
 Copyright (C) 2025 Yaël Moussouni (yael.moussouni@etu.unistra.fr)
 
 This program is free software: you can redistribute it and/or modify
