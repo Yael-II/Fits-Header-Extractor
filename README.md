@@ -7,6 +7,7 @@ Institution: Université de Strasbourg, CNRS, Observatoire astronomique de Stras
 
 Date: 2025-01-13
 
+**Moved to https://codeberg.org/Yael-II/Fits-Header-Extractor/**
 ## Abstract
 
 [FITS](https://en.wikipedia.org/wiki/FITS/) files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this Python package is to explore FITS header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook (see [this repository](https://github.com/Yael-II/MSc2-Project-FITS)).
